@@ -37,7 +37,8 @@ def janken
     if player_hand2==program_face
       puts "結果：あなたの勝ちです！"
     else
-      puts "結果：あなたの負けです。"
+      puts "勝負がつきませんでした。もう一度じゃんけんをします。"
+      return true
     end
   when "パターンB"
     puts "0(上)、1(下)、2(左)、3(右)"
@@ -52,7 +53,8 @@ def janken
     if player_face==program_hand2
       puts "結果：あなたの負けです。"
     else
-      puts "結果：あなたの勝ちです！"
+      puts "勝負がつきませんでした。もう一度じゃんけんをします。"
+      return true
     end
   end
 end
